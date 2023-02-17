@@ -1,0 +1,7 @@
+path_to_testsuite: "./tests/testdata/testfiles/robotframework-e2e-demo"
+amount_of_containers: "5"
+amount_of_agents: "1"
+testframework: "robotframework"
+base_image: "python:3"
+dependencies:
+  - "requirements.txt"
