@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.16 on linux)" generated="20230220 14:35:37.202" rpa="false" schemaversion="3">
+<suite id="s1" name="Robotframework-E2E-Demo" source="/home/icadi/Code/Afstudeerstage%20Sam/tests/testdata/testfiles/robotframework-e2e-demo">
+<suite id="s1-s1" name="Robot Tests" source="/home/icadi/Code/Afstudeerstage%20Sam/tests/testdata/testfiles/robotframework-e2e-demo/robot_tests">
+<suite id="s1-s1-s1" name="My Testcase" source="/home/icadi/Code/Afstudeerstage%20Sam/tests/testdata/testfiles/robotframework-e2e-demo/robot_tests/my_testcase.robot">
+<test id="s1-s1-s1-t1" name="Open Browser" line="7">
+<kw name="Open The Browser" library="keywords">
+<kw name="Open Browser">
+<arg>url=${HOMEPAGE}</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>alias=None</arg>
+<arg>remote_url=${GRID_URL}</arg>
+<msg timestamp="20230220 14:35:37.242" level="FAIL">No keyword with name 'Open Browser' found. Did you mean:
+    keywords.Open The Browser</msg>
+<status status="FAIL" starttime="20230220 14:35:37.242" endtime="20230220 14:35:37.242"/>
+</kw>
+<status status="FAIL" starttime="20230220 14:35:37.240" endtime="20230220 14:35:37.242"/>
+</kw>
+<status status="FAIL" starttime="20230220 14:35:37.239" endtime="20230220 14:35:37.243">No keyword with name 'Open Browser' found. Did you mean:
+    keywords.Open The Browser</status>
+</test>
+<test id="s1-s1-s1-t2" name="Search on DDG" line="10">
+<kw name="Search Topic" library="keywords">
+<arg>browserstack</arg>
+<kw name="Input Text">
+<arg>name=q</arg>
+<arg>${topic}</arg>
+<msg timestamp="20230220 14:35:37.245" level="FAIL">No keyword with name 'Input Text' found.</msg>
+<status status="FAIL" starttime="20230220 14:35:37.245" endtime="20230220 14:35:37.245"/>
+</kw>
+<kw name="Press Keys">
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<status status="NOT RUN" starttime="20230220 14:35:37.246" endtime="20230220 14:35:37.246"/>
+</kw>
+<status status="FAIL" starttime="20230220 14:35:37.243" endtime="20230220 14:35:37.246"/>
+</kw>
+<status status="FAIL" starttime="20230220 14:35:37.243" endtime="20230220 14:35:37.246">No keyword with name 'Input Text' found.</status>
+</test>
+<status status="FAIL" starttime="20230220 14:35:37.224" endtime="20230220 14:35:37.247"/>
+</suite>
+<status status="FAIL" starttime="20230220 14:35:37.223" endtime="20230220 14:35:37.247"/>
+</suite>
+<status status="FAIL" starttime="20230220 14:35:37.203" endtime="20230220 14:35:37.248"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Robotframework-E2E-Demo">Robotframework-E2E-Demo</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Robot Tests">Robotframework-E2E-Demo.Robot Tests</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1" name="My Testcase">Robotframework-E2E-Demo.Robot Tests.My Testcase</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230220 14:35:37.227" level="ERROR">Error in file '/home/icadi/Code/Afstudeerstage%20Sam/tests/testdata/testfiles/robotframework-e2e-demo/robot_tests/my_testcase.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/icadi/.virtualenvs/deployment_stage/bin
+  /usr/lib/python39.zip
+  /usr/lib/python3.9
+  /usr/lib/python3.9/lib-dynload
+  /home/icadi/.virtualenvs/deployment_stage/lib/python3.9/site-packages</msg>
+<msg timestamp="20230220 14:35:37.236" level="ERROR">Error in file '/home/icadi/Code/Afstudeerstage%20Sam/tests/testdata/testfiles/robotframework-e2e-demo/robot_tests/keywords.resource' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/icadi/.virtualenvs/deployment_stage/bin
+  /usr/lib/python39.zip
+  /usr/lib/python3.9
+  /usr/lib/python3.9/lib-dynload
+  /home/icadi/.virtualenvs/deployment_stage/lib/python3.9/site-packages</msg>
+</errors>
+</robot>

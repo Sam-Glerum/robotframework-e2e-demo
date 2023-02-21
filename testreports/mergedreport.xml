@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 6.0.2 (Python 3.9.16 on linux)" generated="20230221 11:27:20.839" rpa="false" schemaversion="3">
+<suite id="s1" name="My Testcase1 &amp; My Testcase2 &amp; My Testcase">
+<suite id="s1-s1" name="My Testcase1" source="/tests/robot_tests/my_testcase1.robot">
+<test id="s1-s1-t1" name="Open Browser" line="7">
+<kw name="Open The Browser" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${HOMEPAGE}</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>alias=None</arg>
+<arg>remote_url=${GRID_URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230221 10:25:40.910" level="INFO">Opening browser 'Firefox' to base url 'http://duckduckgo.com' through remote server at 'http://selenium_grid_hub_robotframework:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20230221 10:25:40.888" endtime="20230221 10:26:03.460"/>
+</kw>
+<status status="PASS" starttime="20230221 10:25:40.874" endtime="20230221 10:26:03.460"/>
+</kw>
+<status status="PASS" starttime="20230221 10:25:40.867" endtime="20230221 10:26:03.460"/>
+</test>
+<test id="s1-s1-t2" name="Search on DDG" line="10">
+<kw name="Search Topic" library="keywords">
+<arg>browserstack</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>${topic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230221 10:26:03.463" level="INFO">Typing text 'browserstack' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20230221 10:26:03.462" endtime="20230221 10:26:03.596"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230221 10:26:03.597" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20230221 10:26:03.961" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230221 10:26:03.961" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230221 10:26:03.596" endtime="20230221 10:26:04.012"/>
+</kw>
+<status status="PASS" starttime="20230221 10:26:03.461" endtime="20230221 10:26:04.013"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230221 10:26:04.013" endtime="20230221 10:26:05.475"/>
+</kw>
+<status status="PASS" starttime="20230221 10:26:03.461" endtime="20230221 10:26:05.475"/>
+</test>
+<status status="PASS" starttime="20230221 10:25:39.653" endtime="20230221 10:26:05.476"/>
+</suite>
+<suite id="s1-s2" name="My Testcase2" source="/tests/robot_tests/my_testcase2.robot">
+<test id="s1-s2-t1" name="Open Browser" line="7">
+<kw name="Open The Browser" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${HOMEPAGE}</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>alias=None</arg>
+<arg>remote_url=${GRID_URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230221 10:25:42.094" level="INFO">Opening browser 'Firefox' to base url 'http://duckduckgo.com' through remote server at 'http://selenium_grid_hub_robotframework:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20230221 10:25:42.080" endtime="20230221 10:25:57.937"/>
+</kw>
+<status status="PASS" starttime="20230221 10:25:42.080" endtime="20230221 10:25:57.938"/>
+</kw>
+<status status="PASS" starttime="20230221 10:25:42.079" endtime="20230221 10:25:57.938"/>
+</test>
+<test id="s1-s2-t2" name="Search on DDG" line="10">
+<kw name="Search Topic" library="keywords">
+<arg>browserstack</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>${topic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230221 10:25:57.941" level="INFO">Typing text 'browserstack' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20230221 10:25:57.940" endtime="20230221 10:25:58.104"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230221 10:25:58.105" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20230221 10:25:58.430" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230221 10:25:58.430" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230221 10:25:58.104" endtime="20230221 10:25:58.475"/>
+</kw>
+<status status="PASS" starttime="20230221 10:25:57.939" endtime="20230221 10:25:58.475"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230221 10:25:58.475" endtime="20230221 10:25:59.334"/>
+</kw>
+<status status="PASS" starttime="20230221 10:25:57.938" endtime="20230221 10:25:59.335"/>
+</test>
+<status status="PASS" starttime="20230221 10:25:41.058" endtime="20230221 10:25:59.335"/>
+</suite>
+<suite id="s1-s3" name="My Testcase" source="/tests/robot_tests/my_testcase.robot">
+<test id="s1-s3-t1" name="Open Browser" line="7">
+<kw name="Open The Browser" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${HOMEPAGE}</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>alias=None</arg>
+<arg>remote_url=${GRID_URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230221 10:25:43.269" level="INFO">Opening browser 'Firefox' to base url 'http://duckduckgo.com' through remote server at 'http://selenium_grid_hub_robotframework:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20230221 10:25:43.268" endtime="20230221 10:26:10.979"/>
+</kw>
+<status status="PASS" starttime="20230221 10:25:43.267" endtime="20230221 10:26:10.979"/>
+</kw>
+<status status="PASS" starttime="20230221 10:25:43.267" endtime="20230221 10:26:10.979"/>
+</test>
+<test id="s1-s3-t2" name="Search on DDG" line="10">
+<kw name="Search Topic" library="keywords">
+<arg>browserstack</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>${topic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230221 10:26:10.984" level="INFO">Typing text 'browserstack' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20230221 10:26:10.984" endtime="20230221 10:26:11.177"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230221 10:26:11.178" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20230221 10:26:11.495" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230221 10:26:11.495" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230221 10:26:11.178" endtime="20230221 10:26:11.538"/>
+</kw>
+<status status="PASS" starttime="20230221 10:26:10.982" endtime="20230221 10:26:11.538"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230221 10:26:11.538" endtime="20230221 10:27:16.335"/>
+</kw>
+<status status="PASS" starttime="20230221 10:26:10.981" endtime="20230221 10:27:16.336"/>
+</test>
+<status status="PASS" starttime="20230221 10:25:42.513" endtime="20230221 10:27:16.337"/>
+</suite>
+<status status="PASS" starttime="N/A" endtime="N/A" elapsedtime="137924"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="My Testcase1 &amp; My Testcase2 &amp; My Testcase">My Testcase1 &amp; My Testcase2 &amp; My Testcase</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="My Testcase1">My Testcase1 &amp; My Testcase2 &amp; My Testcase.My Testcase1</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2" name="My Testcase2">My Testcase1 &amp; My Testcase2 &amp; My Testcase.My Testcase2</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s3" name="My Testcase">My Testcase1 &amp; My Testcase2 &amp; My Testcase.My Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

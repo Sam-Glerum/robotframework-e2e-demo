@@ -7,6 +7,6 @@ Resource    keywords.resource
 Open Browser
     Open The Browser
 
-Search on Google
+Search on DDG
     Search Topic  browserstack
-
+    Close Browser
