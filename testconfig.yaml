@@ -3,5 +3,8 @@ amount_of_containers: "5"
 amount_of_agents: "1"
 testframework: "robotframework"
 base_image: "python:3"
+e2e_test_run: "yes"
+browser: "firefox"
+browser_version: "109.0"
 dependencies:
   - "requirements.txt"
